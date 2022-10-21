@@ -8,13 +8,25 @@
     <title>Dog Classifier</title>
 </head>
 <body>
-    <div class="flex flex-col min-h-screen justify-center items-center font-sans">
-        <p>Upload a dog image</p>
-        <form action="/sub" method="POST" enctype="multipart/form-data" class="mt-5 rounded-md border shadow-inner shadow-lg border-black bg-gray-200">
-            <input type="file" name="file">
-            <input type="submit" class="bg-blue-400 rounded-md text-base text-white">
-        </form>
+    
+    <div class="flex flex-col h-screen font-sans bg-gray-200">
+        <div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('static/header.jpg'); height: 60vh; max-height:460px; ">
+			<div class="container max-w-4xl mx-auto pt-16 md:pt-56 text-center break-normal" >
+				<!--Title-->
+					<p class="text-white font-light text-3xl md:text-5xl">
+						 What Dog Am I?
+					</p>
+			</div>
+		</div>
+        <div class="mt-10 flex flex-col items-center justify-center"> 
+            <p class="text-black font-light text-lg">Upload a dog image</p>
+            <form action="/sub" method="POST" enctype="multipart/form-data" class="mt-5 rounded-md border shadow-inner shadow-lg border-black bg-gray-200  font-light">
+                <input type="file" name="file">
+                <input type="submit" class="bg-blue-400 rounded-md text-base text-white">
+            </form>
+        </div>
     </div>
+    
    
     
 </body>
