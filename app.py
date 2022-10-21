@@ -2,10 +2,14 @@ from flask import Flask, render_template, request
 import os
 import numpy as np
 import classifier as clf
-
+import sys
+import logging
 
 
 app = Flask(__name__)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
 app.config['UPLOAD_FOLDER'] =os.path.join('static', 'images')
 
 def build_and_save_image(image):
