@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Dog Classifier</title>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen justify-center items-center font-sans">
+        <p>Upload a dog image</p>
+        <form action="/sub" method="POST" enctype="multipart/form-data" class="mt-5 rounded-md border shadow-inner shadow-lg border-black bg-gray-200">
+            <input type="file" name="file">
+            <input type="submit" class="bg-blue-400 rounded-md text-base text-white">
+        </form>
+    </div>
+   
+    
+</body>
+</html>
