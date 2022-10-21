@@ -12,7 +12,7 @@ def get_class_name(label_index):
 
 
 def get_image_prediction(path):
-  #model = tf.keras.models.load_model(os.path.join('model','Xception_model.h5'))
+  model = tf.keras.models.load_model(os.path.join('model','Xception_model.h5'))
   #img = tf.keras.preprocessing.image.load_img(path, color_mode="rgb", target_size=(180, 180, 3))
   #img_arr = (tf.keras.preprocessing.image.img_to_array(img))/255
   #img_arr = np.array([img_arr])
