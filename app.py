@@ -4,7 +4,7 @@ import numpy as np
 import classifier as clf
 import sys
 import logging
-
+import PIL
 
 app = Flask(__name__)
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
