@@ -9,3 +9,8 @@ A Deep Learning model for dog breed classification using Transfer Learning
 
 ### Results
 **75.2% accuracy** was achieved on the validation data
+
+**[notebook](https://github.com/mehrshad-sdtn/whatdogami/tree/master/notebooks) for model training**
+
+### Deployment
+the project is deployed as a web application via Heroku and with Flask framework and could be found at [this address](https://whatdogami.herokuapp.com/)
